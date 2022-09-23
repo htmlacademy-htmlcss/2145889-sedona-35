@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Музаффар Нурмухамадов](https://up.htmlacademy.ru/htmlcss/35/user/2145889).
-* Наставник: `Неизвестно`.
+- Студент: [Музаффар Нурмухамадов](https://up.htmlacademy.ru/htmlcss/35/user/2145889).
+- Наставник: [Алена Сафьянникова] (https://htmlacademy.ru/profile/safyann).
 
 ---
 
