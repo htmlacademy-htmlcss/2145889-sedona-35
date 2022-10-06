@@ -1,15 +1,71 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsans-400.woff2") format("woff2"),
-    url("../fonts/ptsans-700.woff2") format("woff");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  background-color: rgb(67, 133, 184);
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+/*Хидер*/
+.main-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+.menu-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+  text-decoration: none;
+}
+.main-index {
+  background-image: url("../images/header-background.jpg");
+  background-color: #ffffff;
+  color: #000000;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.advantages-list {
+  text-align: center;
+}
+.advantages-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+/*Последний advantage выходит белым на белом фоне*/
+.advantages-name-white {
+  color: #ffffff;
+}
+.advantages-name-white + .advantages-description {
+  color: #ffffff;
+}
+.recommendations-list {
+  text-align: center;
+}
+.recommendations-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.hotel-search {
+  text-align: center;
 }
