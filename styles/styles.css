@@ -20,11 +20,25 @@ body {
   background-color: #f2f2f2;
   color: #000000;
 }
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #68a2ca;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
-/*Хидер*/
-.main-header {
+/*Хидер всех страниц сайта*/
+.header {
   background-color: #ffffff;
   color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
 }
 .menu-link {
   font-weight: 700;
@@ -34,6 +48,7 @@ body {
   text-align: left;
   text-decoration: none;
 }
+
 .main-index {
   background-image: url("../images/header-background.jpg");
   background-color: #ffffff;
@@ -41,8 +56,20 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.advantages-list {
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+/*Раздел advantages*/
+.advantages {
   text-align: center;
+}
+.advantages-title-description {
+  font-size: 22px;
+  line-height: 26px;
 }
 .advantages-name {
   font-weight: 700;
@@ -50,22 +77,76 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
-/*Последний advantage выходит белым на белом фоне*/
-.advantages-name-white {
+.advantages-list li:first-child,
+.advantages-list li:last-child {
+  background-color: #82b3d3;
   color: #ffffff;
 }
-.advantages-name-white + .advantages-description {
-  color: #ffffff;
+.advantages-list li:nth-child(2),
+.advantages-list li:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
-.recommendations-list {
+.advantages-list li:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/*Раздел с рекоммендациями*/
+.recommendations {
   text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
 }
+
 .recommendations-name {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
+.recommendations-list li:nth-child(2) {
+  background-color: #ffffff;
+}
+/*Раздел поиска гостиницы*/
 .hotel-search {
   text-align: center;
+}
+.hotel-search p {
+  font-size: 22px;
+  line-height: 26px;
+}
+.hotel-search .button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756157;
+}
+/*Блок подписки*/
+.subscribe {
+  text-align: center;
+  background-color: #ffffff;
+  color: #ffffff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.subscribe p {
+  font-size: 22px;
+  line-height: 26px;
+}
+.subscribe .button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82b3d3;
+}
+.page-subscribe {
+  color: #000000;
+}
+.main-subscribe {
+  background-image: url("../images/subscribe-background-picture.jpg");
+}
+
+/*Футер*/
+.main-footer {
+  text-align: center;
+}
+.tel-number {
+  font-size: 40px;
+  line-height: 40px;
 }
