@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* Временное удаление точек перед списками */
+.infra-list,
+.house-type-list,
+.breadcrumbs,
+.product-list,
+.pagination {
+  list-style-type: none;
+}
+.button-brown {
+  background-color: #756157;
+}
+
+.rating {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: 400;
+}
+
+/*Хидер всех страниц сайта*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+.menu-list .logo {
+  width: 140px;
+}
+.menu-list {
+  width: 507px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu-user {
+  max-width: 268px;
+  margin-left: auto;
+}
+
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.menu-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+  text-decoration: none;
+}
+
+/* .main-container {
+  flex-grow: 1;
+} */
+.main-index {
+  background-image: url("../images/header-background.jpg");
+  color: #000000;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.city-logo-svg {
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+/*Раздел advantages*/
+.advantages {
+  text-align: center;
+}
+.advantages-title-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+.advantages-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages-item {
+  width: 400px;
+  height: 384px;
+  list-style-type: none;
+}
+
+.advantages-list li:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-list li:nth-child(2n + 1) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-list li:first-child,
+.advantages-list li:last-child {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+/*Раздел с рекоммендациями*/
+.recommendations {
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.recommendations-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recommendations-item {
+  width: 400px;
+  height: 384px;
+  list-style-type: none;
+}
+
+.recommendations-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.recommendations-list li:nth-child(2n) {
+  background-color: #ffffff;
+}
+/*Раздел поиска гостиницы*/
+.hotel-search {
+  text-align: center;
+}
+.hotel-search p {
+  font-size: 22px;
+  line-height: 26px;
+}
+.hotel-search .button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756157;
+}
+/*Блок подписки*/
+.subscribe {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+.subscribe p {
+  font-size: 22px;
+  line-height: 26px;
+}
+.subscribe .button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82b3d3;
+}
+.main-subscribe {
+  background-image: url("../images/subscribe-background-picture.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/*Футер*/
+.main-footer {
+  text-align: center;
+}
+/* .footer-contacts {
+  width: 1060px;
+} */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  width: 142px;
+  list-style-type: none;
+}
+.tel-number {
+  font-size: 40px;
+  line-height: 40px;
+  width: 720px;
+}
+.site-developer {
+  width: 115px;
+}
+
+/*CATALOG*/
+/*Фильтр гостиниц*/
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+.main-inner {
+  flex-grow: 1;
+}
+.catalog-filter {
+  background-color: #82b3d3;
+  color: #ffffff;
+  background-image: url("../images/filter-background-image.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.filter {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.sort-container {
+  margin: 0 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-list-container {
+  margin: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-card {
+  margin: 0;
+  padding: 0;
+  width: 340px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  font-size: 16px;
+  line-height: 21px;
+}
+.infra-title,
+.house-type-title,
+.price-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.control {
+  font-size: 18px;
+  line-height: 23px;
+}
+/*Список отфильтрованных гостиниц*/
+.catalog-founded-hotels {
+  background-color: #ffffff;
+}
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+/*Пагинация*/
+.pagination {
+  padding: 0;
+  margin: 0 70px;
+  display: flex;
+  justify-content: flex-start;
+}
+.pagination-item {
+  padding-right: 8px;
+}
+.pagination-link {
+  text-align: center;
+  font-size: 20px;
+  line-height: 36px;
+}
+.pagination-current {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+.pagination-ellipsis {
+  background-color: #ffffff;
+  color: #000000;
+}
