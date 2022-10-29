@@ -8,17 +8,17 @@
   <body>
     <header class="header main-header">
       <nav class="menu">
-        <span class="menu-item logo">
-          <a class="menu-link" href="#">
-            <img
-              src="./images/sedona-logo.svg"
-              width="140"
-              height="70"
-              alt="Городок Седона"
-            />
-          </a>
-        </span>
         <ul class="menu-list">
+          <li class="menu-item logo">
+            <a class="menu-logo-link" href="#">
+              <img
+                src="./images/sedona-logo.svg"
+                width="140"
+                height="70"
+                alt="Городок Седона"
+              />
+            </a>
+          </li>
           <li class="menu-item">
             <a class="menu-link" href="./index.html">Главная</a>
           </li>
@@ -41,44 +41,40 @@
             </span>
           </li>
           <li class="menu-item">
-            <a class="button button-brown" href="#">Хочу сюда!</a>
+            <a class="button button-brown menu-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-index">
       <div class="page-container">
-        <h1 class="visually-hidden">Sedona</h1>
-        <div class="city-logo-svg">
+        <div class="hero">
+          <h1 class="visually-hidden">Sedona</h1>
+          <div class="city-logo-svg">
+            <img
+              class="logo welcome"
+              src="./images/welcome.svg"
+              width="458"
+              height="352"
+              alt="WELCOME"
+            />
+          </div>
           <img
-            class="logo"
-            src="./images/welcome.svg"
-            width="188"
-            height="45"
-            alt="WELCOME"
+            class="divider"
+            src="./images/divider.svg"
+            width="1200"
+            height="57"
+            alt=""
           />
-          <img
-            class="logo"
-            src="./images/gorgeous.svg"
-            width="256"
-            height="29"
-            alt="to the gorgeous"
-          />
-          <img
-            class="logo"
-            src="./images/sedona-white.svg"
-            width="457"
-            height="213"
-            alt="sedona"
-          />
-        </div>
-        <section class="advantages">
           <h2 class="advantages-title">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!
+            Седона — небольшой городок в Аризоне,<br />
+            заслуживающий большего!
           </h2>
           <p class="advantages-title-description">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
+        </div>
+        <section class="advantages">
           <ul class="advantages-list">
             <li class="advantages-item">
               <h3 class="advantages-name">Настоящий городок</h3>
@@ -93,7 +89,6 @@
               height="384"
               alt="Дом в городке Седона"
             />
-
             <li class="advantages-item">
               <h3 class="advantages-name">Небольшая площадь</h3>
               <p class="advantages-description">
@@ -129,7 +124,7 @@
         </section>
         <!--Раздел с рекомендациями(жилье, еда, сувениры)-->
         <section class="recommendations">
-          <h2 class="visually-hidden" hidden>Рекомендации</h2>
+          <h2 class="visually-hidden">Рекомендации</h2>
           <ul class="recommendations-list">
             <li class="recommendations-item">
               <h3 class="recommendations-name">Жильё</h3>
@@ -157,52 +152,63 @@
         </section>
         <!--Поиск гостиницы-->
         <section class="hotel-search">
-          <h2 class="hotel-search-title">Заинтересовались?</h2>
-          <p class="hotel-search-description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в Седоне
-          </p>
-          <a class="button button-main button-brown" href="#"
-            >Поиск гостиницы в Седоне</a
-          >
+          <div class="hotel-search-container">
+            <div class="hotel-search-title">
+              <h2 class="hotel-search-title">Заинтересовались?</h2>
+              <p class="hotel-search-description">
+                Укажите предполагаемые даты поездки,<br />
+                и мы покажем вам лучшие предложения гостиниц в Седоне
+              </p>
+            </div>
+            <a class="button button-main button-brown" href="#"
+              >Поиск гостиницы в Седоне</a
+            >
+          </div>
         </section>
         <!--Блок подписки-->
         <section class="subscribe main-subscribe">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">
-            Только полезная информация и никакого спама, честное бойскаутское!
-          </p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
-            <p class="subscribe-form-email">
-              <label for="form-email"></label>
-              <input
-                type="email"
-                id="form-email"
-                name="form-email"
-                placeholder="Ваш e-mail"
-              />
-              <button class="button button-additional" type="submit">
-                Подписаться
-              </button>
-            </p>
-          </form>
+          <div class="subscribe-container">
+            <div class="subscribe-title-container">
+              <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+              <p class="subscribe-description">
+                Только полезная информация и никакого спама,<br />
+                честное бойскаутское!
+              </p>
+            </div>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
+              <p class="subscribe-form-email">
+                <label for="form-email"></label>
+                <input
+                  type="email"
+                  id="form-email"
+                  name="form-email"
+                  placeholder="Ваш e-mail"
+                />
+                <button class="button button-additional" type="submit">
+                  Подписаться
+                </button>
+              </p>
+            </form>
+          </div>
         </section>
       </div>
     </main>
+    <!-- ФУТЕР -->
     <footer class="main-footer">
+      <!-- Убрал временно некоторые visually-hidden в футере для удобства -->
       <section class="footer-contacts">
         <div class="footer-container">
-          <h2 class="visually-hidden" hidden>Контакты</h2>
-          <h3 class="visually-hidden footer-social" hidden>Социальные сети</h3>
+          <h2 class="visually-hidden">Контакты</h2>
+          <h3 class="visually-hidden footer-social">Социальные сети</h3>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
+                <span class=""></span>Вк</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграмм</span>
+                <span class="">Тг</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -210,13 +216,13 @@
                 class="button"
                 href="https://www.youtube.com/user/htmlacademyru"
               >
-                <span class="visually-hidden">Youtube</span>
+                <span class="">Yt</span>
               </a>
             </li>
           </ul>
-          <h3 class="visually-hidden" hidden>Номер телефона</h3>
+          <h3 class="visually-hidden">Номер телефона</h3>
           <p class="tel-number">+7 (812) 812-12-12</p>
-          <h3 class="visually-hidden" hidden>Разработчик сайта</h3>
+          <h3 class="visually-hidden">Разработчик сайта</h3>
           <a class="button site-developer" href="https://htmlacademy.ru/">
             <span class="visually-hidden">HTML Academy</span>
           </a>
