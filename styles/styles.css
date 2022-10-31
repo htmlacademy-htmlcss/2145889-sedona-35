@@ -184,17 +184,56 @@ h2 {
   line-height: 26px;
 }
 .advantages-name {
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
+.advantages-text {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 103px;
+  justify-content: center;
+  gap: 60px;
+  /* align-items: center; */
+}
+li:first-child .advantages-text,
+li:last-child .advantages-text {
+  padding-top: 92px;
+}
+.advantages-name::before {
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+li:first-child .advantages-name::before,
+li:last-child .advantages-name::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-description {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 0;
 }
 .advantages-item {
   width: 400px;
@@ -202,6 +241,14 @@ h2 {
   list-style-type: none;
 }
 
+.right-side-photo {
+  grid-column: -3/-1;
+}
+.left-side-photo {
+  grid-column: 1/3;
+}
+
+/* фон у advantages items */
 .advantages-list li:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -219,12 +266,14 @@ h2 {
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
+/* Подключили гриды, сами карточки с рекомандациями
+будем оформлять при вставке иконок */
 .recommendations-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 0;
 }
 .recommendations-item {
   width: 400px;
