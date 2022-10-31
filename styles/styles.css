@@ -517,9 +517,9 @@ h1 {
 
 /* product-list сделаем потом с помощью гридов  */
 .product-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   margin: 0;
   padding: 0;
 }
@@ -528,6 +528,23 @@ h1 {
   padding: 0;
   width: 340px;
   height: 438px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px;
+}
+.product-card-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  column-gap: 20px;
+  row-gap: 16px;
+}
+.pricetag {
+  justify-self: end;
 }
 /*Список отфильтрованных гостиниц*/
 .catalog-founded-hotels {
@@ -541,6 +558,7 @@ h1 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
 }
 /*Пагинация*/
 .pagination {
