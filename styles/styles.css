@@ -49,6 +49,7 @@ body {
   background-color: #82b3d3;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .button-brown {
@@ -97,6 +98,14 @@ body {
   text-align: left;
   text-decoration: none;
 }
+.menu-item .button-brown {
+  padding: 8px 34px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 14px;
+}
+
 .menu-item {
   height: 64px;
 }
@@ -167,22 +176,23 @@ h2 {
   margin: 0 auto;
 }
 .advantages-title {
-  padding-top: 70px;
-  margin: 0;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 .advantages-title-description {
-  margin: 0;
-  padding-top: 26px;
+  margin: 0 auto;
+  margin-top: 26px;
+  font-size: 22px;
+  line-height: 26px;
+  width: 652px;
 }
 
 /*Раздел advantages*/
 .advantages {
   text-align: center;
 }
-.advantages-title-description {
-  font-size: 22px;
-  line-height: 26px;
-}
+
 .advantages-name {
   position: relative;
   font-weight: 700;
@@ -202,7 +212,6 @@ h2 {
   padding-top: 103px;
   justify-content: center;
   gap: 60px;
-  /* align-items: center; */
 }
 li:first-child .advantages-text,
 li:last-child .advantages-text {
@@ -280,15 +289,46 @@ li:last-child .advantages-name::before {
   height: 384px;
   list-style-type: none;
 }
-
+.recommendations-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  padding: 182px 85px 0;
+  gap: 30px;
+}
 .recommendations-name {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
 }
+.recommendations-description {
+  display: inline-block;
+  margin: 0;
+}
+
 .recommendations-list li:nth-child(2n) {
   background-color: #ffffff;
+}
+.living-aparts {
+  background-image: url("../images/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 76px 72px;
+  background-position: center 80px;
+}
+.food {
+  background-image: url("../images/icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 70px;
+  background-position: center 81px;
+}
+.present {
+  background-image: url("../images/icon-present.svg");
+  background-repeat: no-repeat;
+  background-size: 65px 76px;
+  background-position: center 78px;
 }
 /*Раздел поиска гостиницы*/
 .hotel-search {
@@ -326,6 +366,12 @@ li:last-child .advantages-name::before {
   background-color: #ffffff;
   color: #000000;
 }
+.main-subscribe {
+  background-image: url("../images/subscribe-background-picture.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
 .subscribe-container {
   display: flex;
   flex-direction: column;
@@ -333,16 +379,21 @@ li:last-child .advantages-name::before {
   padding: 96px 258px 104px;
   gap: 54px;
 }
-/*Раздел с формой временный*/
-.subscribe-form {
-  width: 684px;
-  height: 52px;
-}
 .subscribe .subscribe-description {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
   padding-top: 20px;
+}
+/*Раздел с формой временный*/
+.mail-subscribe {
+  display: flex;
+  width: 684px;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscribe-form {
+  height: 52px;
 }
 .subscribe .button {
   font-size: 20px;
@@ -354,11 +405,12 @@ li:last-child .advantages-name::before {
 .subscribe-form-email {
   margin: 0;
 }
-.main-subscribe {
-  background-image: url("../images/subscribe-background-picture.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: #ffffff;
+.email-field {
+  margin: 0;
+  padding: 12px 20px;
+  padding-right: 35px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /*Футер*/
