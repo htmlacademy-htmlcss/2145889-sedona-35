@@ -213,9 +213,7 @@
                 и мы покажем вам лучшие предложения гостиниц в Седоне
               </p>
             </div>
-            <a class="button button-main button-brown" href="#"
-              >Поиск гостиницы в Седоне</a
-            >
+            <a class="button button-brown" href="#">Поиск гостиницы в Седоне</a>
           </div>
         </section>
         <!--Блок подписки-->
@@ -230,6 +228,7 @@
             </div>
             <div class="mail-subscribe">
               <form
+                id="mail-subscribe-form"
                 class="subscribe-form"
                 action="https://echo.htmlacademy.ru/"
               >
@@ -239,12 +238,16 @@
                     class="email-field"
                     type="email"
                     id="form-email"
-                    name="form-email"
+                    name="email"
                     placeholder="Ваш e-mail"
                   />
                 </p>
               </form>
-              <button class="button button-additional" type="submit">
+              <button
+                class="button subscribe-button"
+                type="submit"
+                form="mail-subscribe-form"
+              >
                 Подписаться
               </button>
             </div>
@@ -262,6 +265,7 @@
             <li class="footer-social-item">
               <a class="social-button" href="https://vk.com/htmlacademy">
                 <svg
+                  class="social-icon"
                   aria-hidden="true"
                   focusable="false"
                   width="24"
@@ -337,7 +341,7 @@
           <a class="tel-number" href="tel:+78005558628">+7 (812) 812-12-12</a>
           <h3 class="visually-hidden">Разработчик сайта</h3>
           <a
-            class="social-button site-developer"
+            class="social-button-text site-developer"
             href="https://htmlacademy.ru/"
           >
             <svg

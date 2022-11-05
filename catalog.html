@@ -209,8 +209,12 @@
                   <input class="control-input" type="range" />
                 </fieldset>
                 <fieldset class="action-buttons">
-                  <button class="button" type="submit">ПРИМЕНИТЬ</button>
-                  <button class="button" type="reset">СБРОСИТЬ</button>
+                  <button class="button submit-button" type="submit">
+                    ПРИМЕНИТЬ
+                  </button>
+                  <button class="button reset-button" type="reset">
+                    СБРОСИТЬ
+                  </button>
                 </fieldset>
               </div>
             </form>
@@ -308,11 +312,13 @@
                   <a href="#" class="product-card-link button button-brown">
                     Подробнее</a
                   >
-                  <button class="button" type="submit">В избранное</button>
+                  <button class="button fav-button" type="submit">
+                    В избранное
+                  </button>
                   <span class="stars four-stars">
                     <span class="visually-hidden">4 звезды</span>
                   </span>
-                  <button class="button button-disabled rating" disabled>
+                  <button class="button-disabled rating" disabled>
                     Рейтинг: 8,5
                   </button>
                 </div>
@@ -334,7 +340,9 @@
                   <a href="#" class="product-card-link button button-brown"
                     >Подробнее</a
                   >
-                  <button class="button" type="submit">В избранное</button>
+                  <button class="button button-active fav-button" type="submit">
+                    В избранном
+                  </button>
                   <span class="stars four-stars">
                     <span class="visually-hidden">4 звезды</span>
                   </span>
@@ -360,7 +368,9 @@
                   <a href="#" class="product-card-link button button-brown">
                     Подробнее</a
                   >
-                  <button class="button" type="submit">В избранное</button>
+                  <button class="button fav-button" type="submit">
+                    В избранное
+                  </button>
                   <span class="stars three-stars">
                     <span class="visually-hidden">3 звезды</span>
                   </span>
@@ -386,7 +396,9 @@
                   <a href="#" class="product-card-link button button-brown">
                     Подробнее</a
                   >
-                  <button class="button" type="submit">В избранное</button>
+                  <button class="button fav-button" type="submit">
+                    В избранное
+                  </button>
                   <span class="stars two-stars">
                     <span class="visually-hidden">2 звезды</span>
                   </span>
@@ -400,7 +412,7 @@
           <!--Пагинация-->
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current button">1</a>
+              <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-link button">2</a>
@@ -412,7 +424,7 @@
               <a href="#" class="pagination-link button">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link button pagination-ellipsis">...</a>
+              <a class="pagination-link pagination-ellipsis">...</a>
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-link button pagination-two-digits"
@@ -431,20 +443,31 @@
                 честное бойскаутское!
               </p>
             </div>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
-              <p class="subscribe-form-email">
-                <label for="form-email"></label>
-                <input
-                  type="email"
-                  id="form-email"
-                  name="form-email"
-                  placeholder="Ваш e-mail"
-                />
-                <button class="button button-additional" type="submit">
-                  Подписаться
-                </button>
-              </p>
-            </form>
+            <div class="mail-subscribe">
+              <form
+                id="mail-subscribe-form"
+                class="subscribe-form"
+                action="https://echo.htmlacademy.ru/"
+              >
+                <p class="subscribe-form-email">
+                  <label for="form-email"></label>
+                  <input
+                    class="email-field"
+                    type="email"
+                    id="form-email"
+                    name="email"
+                    placeholder="Ваш e-mail"
+                  />
+                </p>
+              </form>
+              <button
+                class="button subscribe-button"
+                type="submit"
+                form="mail-subscribe-form"
+              >
+                Подписаться
+              </button>
+            </div>
           </div>
         </section>
       </div>
@@ -534,7 +557,7 @@
           <a class="tel-number" href="tel:+78005558628">+7 (812) 812-12-12</a>
           <h3 class="visually-hidden">Разработчик сайта</h3>
           <a
-            class="social-button site-developer"
+            class="social-button-text site-developer"
             href="https://htmlacademy.ru/"
           >
             <svg
