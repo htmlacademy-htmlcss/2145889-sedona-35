@@ -104,6 +104,19 @@ body {
   text-align: left;
   text-decoration: none;
 }
+.menu-link-current {
+  position: relative;
+}
+.menu-link-current::before {
+  position: absolute;
+  right: 12px;
+  bottom: -1px;
+  left: 12px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
+}
+
 .icon-heart {
   position: relative;
 }
@@ -116,6 +129,17 @@ body {
   left: 20px;
   background-color: #7db54f;
   content: "";
+}
+.fav-counter {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: 16px;
+  left: 24px;
 }
 .menu-item .button-brown {
   padding: 8px 34px;
@@ -684,6 +708,15 @@ h1 {
 .breadcrumbs-item:last-child {
   background-image: none;
 }
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+.breadcrumbs-link:focus {
+  color: rgba(255, 255, 255, 1);
+}
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 /* Стилизацию форм оставим на потом... */
 /* Cортировка */
 .sort-container {
@@ -711,22 +744,44 @@ h1 {
   gap: 8px;
   list-style-type: none;
 }
-.view-button-list {
+.view-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  outline: 2px solid #e5e5e5;
+}
+.view-button-current {
+  outline: 2px solid #000000;
+}
+.view-button:hover {
+  outline: 2px solid #000000;
+}
+.view-button:focus {
+  outline: 2px solid #68a2ca;
+}
+/* .view-button-list {
   width: 48px;
   height: 48px;
-}
-.view-button {
-  display: block;
-  height: inherit;
-}
-.view-icon {
-  padding: 15px 14px;
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
-}
-.view-icon-current {
+} */
+
+/* .view-icon-current {
   border: 2px solid #000000;
 }
+.view-button-list .view-button:hover {
+  border: 2px solid inset #000000;
+  border-radius: 4px;
+}
+.view-button-list .view-button:focus {
+  outline: 2px inset solid #68a2ca;
+  border-radius: 4px;
+}
+.view-button-list .view-button:active {
+  border: 2px solid #000000;
+  border-radius: 4px;
+} */
 /*Список отфильтрованных гостиниц*/
 .catalog-founded-hotels {
   background-color: #ffffff;
