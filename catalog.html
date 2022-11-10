@@ -73,6 +73,7 @@
                 />
               </svg>
               <span class="visually-hidden">Избранное</span>
+              <span class="fav-counter">12</span>
             </a>
           </li>
           <li class="menu-item">
@@ -120,95 +121,125 @@
             >
               <div class="filter-left">
                 <fieldset class="infra">
-                  <legend class="infra-title">Инфраструктура</legend>
+                  <legend class="infra-title">Инфраструктура:</legend>
                   <ul class="infra-list">
                     <li class="infra-item">
                       <label class="control">
                         <input
                           type="checkbox"
-                          class="control-input"
+                          class="visually-hidden control-input"
                           name="pool"
                           checked
                         />
-                        Бассейн
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="infra-item">
                       <label class="control">
                         <input
                           type="checkbox"
-                          class="control-input"
+                          class="visually-hidden control-input"
                           name="parking"
                           checked
                         />
-                        Парковка
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="infra-item">
                       <label class="control">
                         <input
                           type="checkbox"
-                          class="control-input"
+                          class="visually-hidden control-input"
                           name="wifi"
                         />
-                        Wi-Fi
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
                 <fieldset class="house-type">
-                  <legend class="house-type-title">Тип жилья</legend>
+                  <legend class="house-type-title">Тип жилья:</legend>
                   <ul class="house-type-list">
                     <li class="house-type-item">
                       <label class="control">
                         <input
                           type="radio"
-                          class="control-input"
+                          class="visually-hidden control-input"
                           name="house-type"
                           value="hotel"
                           checked
                         />
-                        Гостиница
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="house-type-item">
                       <label class="control">
                         <input
                           type="radio"
-                          class="control-input"
+                          class="visually-hidden control-input"
                           name="house-type"
                           value="motel"
                         />
-                        Мотель
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="house-type-item">
                       <label class="control">
                         <input
                           type="radio"
-                          class="control-input"
+                          class="visually-hidden control-input"
                           name="house-type"
                           value="aparts"
                         />
-                        Апартаменты
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
               </div>
-              <!--FIELDSET с ценой временный, его нужно будет поменять-->
               <div class="filter-right">
                 <fieldset class="price">
                   <legend class="price-title">Стоимость, ₽:</legend>
-                  <label class="control">
-                    <input type="text" class="control-input" value="0" />
-                    от
-                  </label>
-                  <label class="control">
-                    <input type="text" class="control-input" value="9000" />
-                    до
-                  </label>
-                  <input class="control-input" type="range" />
+                  <div class="range-wrapper-inputs">
+                    <label class="control">
+                      <input
+                        class="range-input range-input-min"
+                        type="text"
+                        class="control-input min-price"
+                        value="0"
+                      />
+                      <span class="range-shadow">от</span>
+                    </label>
+                    <label class="control">
+                      <input
+                        class="range-input range-input-max"
+                        type="text"
+                        class="control-input max-price"
+                        value="9000"
+                      />
+                      <span class="range-shadow">до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden"
+                          >Изменить минимальную цену.</span
+                        >
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden"
+                          >Изменить максимальную цену.</span
+                        >
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
                 <fieldset class="action-buttons">
                   <button class="button submit-button" type="submit">
@@ -454,7 +485,7 @@
                 <p class="subscribe-form-email">
                   <label for="form-email"></label>
                   <input
-                    class="email-field"
+                    class="email-field email-field-catalog"
                     type="email"
                     id="form-email"
                     name="email"
