@@ -72,7 +72,6 @@ body {
   background-color: #ffffff;
   color: #000000;
   width: 1200px;
-  /* height: 64px; */
   margin: 0 auto;
   font-size: 20px;
   line-height: 24px;
@@ -171,7 +170,6 @@ body {
   max-height: 6px;
 }
 .menu-user {
-  /* max-width: 300px; */
   height: 64px;
   margin-left: auto;
 }
@@ -328,8 +326,6 @@ li:last-child .advantages-name::before {
   text-align: center;
   background-color: rgba(131, 179, 211, 0.12);
 }
-/* Подключили гриды, сами карточки с рекомандациями
-будем оформлять при вставке иконок */
 .recommendations-list {
   margin: 0;
   padding: 0;
@@ -489,7 +485,6 @@ li:last-child .advantages-name::before {
   border: none;
   border-radius: 4px 0 0 4px;
   width: 432px;
-  /* color: rgba(0, 0, 0, 0.6); */
 }
 .email-field-catalog {
   background-color: #f2f2f2;
@@ -951,15 +946,16 @@ h1 {
   border-radius: 4px;
   background-color: #ffffff;
 }
-/* Разобраться с состояниями */
+
 .control:hover .control-mark,
 .control:hover .control-label {
   opacity: 30%;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
   outline: 3px solid #83b3d3;
 }
+
 .control:active .control-mark {
   outline: 2px solid #83b3d3;
 }
@@ -1056,7 +1052,7 @@ h1 {
   position: relative;
   padding: 0;
 }
-/* Разобраться с состояниями */
+
 .range-input:hover,
 .range-input:focus {
   outline: 3px solid rgba(131, 179, 211, 1);
