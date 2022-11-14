@@ -229,14 +229,11 @@ body {
   display: block;
   margin: 0 auto;
 }
-h2 {
+.advantages-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto;
-}
-.advantages-title {
   width: 700px;
   margin: 0 auto;
   margin-top: 70px;
@@ -410,6 +407,11 @@ li:last-child .advantages-name::before {
   gap: 54px;
 }
 .hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 auto;
   gap: 20px;
 }
 
@@ -454,6 +456,10 @@ li:last-child .advantages-name::before {
   gap: 54px;
 }
 .subscribe-title-container {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -636,6 +642,11 @@ li:nth-child(3) .social-button {
   width: 578px;
 }
 .modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0 auto;
   margin-bottom: 64px;
 }
 .modal-content label {
@@ -893,10 +904,12 @@ li:nth-child(3) .social-button {
 
 /*CATALOG*/
 /*Фильтр гостиниц*/
-h1 {
+.page-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  padding: 0;
 }
 .main-inner {
   flex-grow: 1;
@@ -904,10 +917,7 @@ h1 {
   margin: 0 auto;
   background-color: #ffffff;
 }
-.page-title {
-  margin: 0;
-  padding: 0;
-}
+
 .catalog-filter {
   background-color: #82b3d3;
   color: #ffffff;
@@ -1325,6 +1335,10 @@ h1 {
   margin: 0;
 }
 .founded-hotels {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
   align-self: center;
