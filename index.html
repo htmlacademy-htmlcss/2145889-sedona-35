@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -211,8 +212,8 @@
             <div class="hotel-search-title">
               <h2 class="hotel-search-title">Заинтересовались?</h2>
               <p class="hotel-search-description">
-                Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-                предложения гостиниц в Седоне
+                Укажите предполагаемые даты поездки,<br />
+                и мы покажем вам лучшие предложения гостиниц в Седоне
               </p>
             </div>
             <a class="button button-brown" href="#">Поиск гостиницы в Седоне</a>
@@ -233,6 +234,7 @@
                 id="mail-subscribe-form"
                 class="subscribe-form"
                 action="https://echo.htmlacademy.ru/"
+                method="post"
               >
                 <p class="subscribe-form-email">
                   <label for="form-email"></label>
@@ -382,7 +384,7 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg
             class="close-icon"
