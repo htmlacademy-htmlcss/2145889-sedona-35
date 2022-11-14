@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="header main-header">
       <nav class="menu">
-        <ul class="menu-list">
+        <ul class="menu-list main-menu-list">
           <li class="menu-item logo">
             <a class="menu-logo-link" href="#">
               <img
@@ -138,7 +139,7 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-text">
-                <h3 class="advantages-name">Красивая<br />дорога</h3>
+                <h3 class="advantages-name">Красивая дорога</h3>
                 <p class="advantages-description">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
@@ -146,7 +147,7 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-text">
-                <h3 class="advantages-name">Мало<br />туристов</h3>
+                <h3 class="advantages-name">Мало туристов</h3>
                 <p class="advantages-description">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
@@ -163,7 +164,7 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-text">
-                <h3 class="advantages-name">Там есть<br />мост дьявола</h3>
+                <h3 class="advantages-name">Там есть мост дьявола</h3>
                 <p class="advantages-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -179,7 +180,8 @@
               <div class="recommendations-text">
                 <h3 class="recommendations-name">Жильё</h3>
                 <p class="recommendations-description">
-                  Рекомендуем пожить <br />в настоящем мотеле,<br />
+                  Рекомендуем пожить<br />
+                  в настоящем мотеле,<br />
                   всё как в кино!
                 </p>
               </div>
@@ -189,8 +191,7 @@
                 <h3 class="recommendations-name">Еда</h3>
                 <p class="recommendations-description">
                   Всегда заказывайте<br />
-                  топовый фирменный бургер,<br />
-                  вы не разочаруетесь!
+                  топовый фирменный бургер, вы не разочаруетесь!
                 </p>
               </div>
             </li>
@@ -199,8 +200,7 @@
                 <h3 class="recommendations-name">Сувениры</h3>
                 <p class="recommendations-description">
                   Не только китайского,<br />
-                  но и настоящего местного<br />
-                  производства!
+                  но и настоящего местного производства!
                 </p>
               </div>
             </li>
@@ -234,6 +234,7 @@
                 id="mail-subscribe-form"
                 class="subscribe-form"
                 action="https://echo.htmlacademy.ru/"
+                method="post"
               >
                 <p class="subscribe-form-email">
                   <label for="form-email"></label>
@@ -383,7 +384,7 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg
             class="close-icon"
@@ -444,11 +445,7 @@
                 <label class="search-form-title" for="adults-counter"
                   >Взрослые:</label
                 >
-                <button
-                  class="counter-button minus-counter"
-                  type="button"
-                  form="search-form"
-                >
+                <button class="counter-button minus-counter" type="button">
                   <span class="visually-hidden">Меньше</span>
                   <svg
                     class="minus-counter-icon counter-icon"
@@ -469,11 +466,7 @@
                   name="adults"
                   value="2"
                 />
-                <button
-                  class="counter-button plus-counter"
-                  type="button"
-                  form="search-form"
-                >
+                <button class="counter-button plus-counter" type="button">
                   <span class="visually-hidden">Больше</span>
                   <svg
                     class="plus-counter-icon counter-icon"
@@ -527,11 +520,7 @@
                     которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </span>
                 </span>
-                <button
-                  class="counter-button minus-counter"
-                  type="button"
-                  form="search-form"
-                >
+                <button class="counter-button minus-counter" type="button">
                   <span class="visually-hidden">Меньше</span>
                   <svg
                     class="minus-counter-icon counter-icon"
@@ -553,11 +542,7 @@
                   name="children"
                   value="2"
                 />
-                <button
-                  class="counter-button plus-counter"
-                  type="button"
-                  form="search-form"
-                >
+                <button class="counter-button plus-counter" type="button">
                   <span class="visually-hidden">Больше</span>
                   <svg
                     class="plus-counter-icon counter-icon"

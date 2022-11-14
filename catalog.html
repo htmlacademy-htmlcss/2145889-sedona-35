@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>Гостиницы Седоны</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="header page-header">
       <nav class="menu">
-        <ul class="menu-list">
+        <ul class="menu-list main-menu-list">
           <li class="menu-item logo">
             <a class="menu-logo-link" href="#">
               <img
@@ -161,7 +162,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="house-type">
-                  <legend class="house-type-title">Тип жилья:</legend>
+                  <legend class="house-type-title">Тип Жилья:</legend>
                   <ul class="house-type-list">
                     <li class="house-type-item">
                       <label class="control">
@@ -209,31 +210,31 @@
                   <div class="range-wrapper-inputs">
                     <label class="control">
                       <input
-                        class="range-input range-input-min"
+                        class="control-input range-input range-input-min"
                         type="text"
-                        class="control-input min-price"
                         value="0"
+                        name="min-price"
                       />
                       <span class="range-shadow">от</span>
                     </label>
                     <label class="control">
                       <input
-                        class="range-input range-input-max"
+                        class="control-input range-input range-input-max"
                         type="text"
-                        class="control-input max-price"
                         value="9000"
+                        name="max-price"
                       />
                       <span class="range-shadow">до</span>
                     </label>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden"
                           >Изменить минимальную цену.</span
                         >
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden"
                           >Изменить максимальную цену.</span
                         >
@@ -290,8 +291,6 @@
                       class="view-icon"
                       aria-hidden="true"
                       focusable="false"
-                      aria-hidden="true"
-                      focusable="false"
                       width="16"
                       height="14"
                       viewBox="0 0 16 14"
@@ -345,13 +344,13 @@
                   <a href="#" class="product-card-link button button-brown">
                     Подробнее</a
                   >
-                  <button class="button fav-button" type="submit">
+                  <button class="button fav-button" type="button">
                     В избранное
                   </button>
                   <span class="stars four-stars">
                     <span class="visually-hidden">4 звезды</span>
                   </span>
-                  <button class="button-disabled rating" disabled>
+                  <button class="button-disabled rating" type="button" disabled>
                     Рейтинг: 8,5
                   </button>
                 </div>
@@ -373,13 +372,17 @@
                   <a href="#" class="product-card-link button button-brown"
                     >Подробнее</a
                   >
-                  <button class="button button-active fav-button" type="submit">
+                  <button class="button button-active fav-button" type="button">
                     В избранном
                   </button>
                   <span class="stars four-stars">
                     <span class="visually-hidden">4 звезды</span>
                   </span>
-                  <button class="button button-disabled rating" disabled>
+                  <button
+                    class="button button-disabled rating"
+                    type="button"
+                    disabled
+                  >
                     Рейтинг: 9,2
                   </button>
                 </div>
@@ -401,13 +404,17 @@
                   <a href="#" class="product-card-link button button-brown">
                     Подробнее</a
                   >
-                  <button class="button fav-button" type="submit">
+                  <button class="button fav-button" type="button">
                     В избранное
                   </button>
                   <span class="stars three-stars">
                     <span class="visually-hidden">3 звезды</span>
                   </span>
-                  <button class="button button-disabled rating" disabled>
+                  <button
+                    class="button button-disabled rating"
+                    type="button"
+                    disabled
+                  >
                     Рейтинг: 6,9
                   </button>
                 </div>
@@ -429,13 +436,17 @@
                   <a href="#" class="product-card-link button button-brown">
                     Подробнее</a
                   >
-                  <button class="button fav-button" type="submit">
+                  <button class="button fav-button" type="button">
                     В избранное
                   </button>
                   <span class="stars two-stars">
                     <span class="visually-hidden">2 звезды</span>
                   </span>
-                  <button class="button button-disabled rating" disabled>
+                  <button
+                    class="button button-disabled rating"
+                    type="button"
+                    disabled
+                  >
                     Рейтинг: 5,0
                   </button>
                 </div>
@@ -481,6 +492,7 @@
                 id="mail-subscribe-form"
                 class="subscribe-form"
                 action="https://echo.htmlacademy.ru/"
+                method="post"
               >
                 <p class="subscribe-form-email">
                   <label for="form-email"></label>
