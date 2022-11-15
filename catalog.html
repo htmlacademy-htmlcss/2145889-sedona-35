@@ -9,17 +9,15 @@
   <body>
     <header class="header page-header">
       <nav class="menu">
+        <span class="main-logo">
+          <img
+            src="./images/sedona-logo.svg"
+            width="140"
+            height="70"
+            alt="Городок Седона"
+          />
+        </span>
         <ul class="menu-list main-menu-list">
-          <li class="menu-item logo">
-            <a class="menu-logo-link" href="#">
-              <img
-                src="./images/sedona-logo.svg"
-                width="140"
-                height="70"
-                alt="Городок Седона"
-              />
-            </a>
-          </li>
           <li class="menu-item">
             <a class="menu-link" href="./index.html">Главная</a>
           </li>
@@ -43,6 +41,8 @@
                 viewBox="0 0 18 18"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Поиск."
               >
                 <path
                   d="m19.5 18.0083-3.7-3.6796c1-1.2928 1.7-2.9834
@@ -51,7 +51,7 @@
                   fill="#000"
                 />
               </svg>
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
           <li class="menu-item icon icon-heart">
@@ -64,6 +64,8 @@
                 viewBox="0 0 18 17"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Избранное."
               >
                 <path
                   d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4
@@ -73,7 +75,7 @@
                   fill="#000"
                 />
               </svg>
-              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden">Избранное.</span>
               <span class="fav-counter">12</span>
             </a>
           </li>
@@ -83,7 +85,7 @@
         </ul>
       </nav>
     </header>
-    <!-- MAIN -->
+    <!--Мэйн-->
     <main class="main-inner">
       <div class="page-container">
         <section class="catalog-filter">
@@ -99,6 +101,8 @@
                       viewBox="0 0 12 12"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-label="Главная."
                     >
                       <path
                         d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"
@@ -106,7 +110,7 @@
                       />
                       <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" fill="#fff" />
                     </svg>
-                    <span class="visually-hidden">Главная</span>
+                    <span class="visually-hidden">Главная.</span>
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -114,7 +118,7 @@
                 </li>
               </ul>
             </div>
-            <h2 class="visually-hidden">Фильтр гостиниц</h2>
+            <h2 class="visually-hidden">Фильтр гостиниц.</h2>
             <form
               class="filter"
               action="https://echo.htmlacademy.ru/"
@@ -255,7 +259,7 @@
           </div>
         </section>
         <section class="catalog-founded-hotels">
-          <!-- Сортировка -->
+          <!--Сортировка-->
           <div class="sort-container">
             <h2 class="founded-hotels">Найдено гостиниц: 38</h2>
             <div class="sort-control">
@@ -276,13 +280,15 @@
                       viewBox="0 0 16 14"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-label="Показать список."
                     >
                       <path
                         d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
                         fill="#000"
                       />
                     </svg>
-                    <span class="visually-hidden">Показать список</span>
+                    <span class="visually-hidden">Показать список.</span>
                   </a>
                 </li>
                 <li class="view-button-list">
@@ -296,13 +302,15 @@
                       viewBox="0 0 16 14"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-label="Показать слайдшоу."
                     >
                       <path
                         d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"
                         fill="#000"
                       />
                     </svg>
-                    <span class="visually-hidden">Показать слайдшоу</span>
+                    <span class="visually-hidden">Показать слайдшоу.</span>
                   </a>
                 </li>
                 <li class="view-button-list">
@@ -314,13 +322,15 @@
                       viewBox="0 0 16 14"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
+                      role="img"
+                      aria-label="Показать таблицу."
                     >
                       <path
                         d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
                         fill="#000"
                       />
                     </svg>
-                    <span class="visually-hidden">Показать таблицу</span>
+                    <span class="visually-hidden">Показать таблицу.</span>
                   </a>
                 </li>
               </ul>
@@ -335,7 +345,7 @@
                   src="./images/catalog/hotel-amara.jpg"
                   width="300"
                   height="212"
-                  alt=""
+                  alt="Вид из пещеры на звездное небо."
                 />
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
                 <div class="product-card-actions">
@@ -348,7 +358,7 @@
                     В избранное
                   </button>
                   <span class="stars four-stars">
-                    <span class="visually-hidden">4 звезды</span>
+                    <span class="visually-hidden">4 звезды.</span>
                   </span>
                   <button class="button-disabled rating" type="button" disabled>
                     Рейтинг: 8,5
@@ -363,7 +373,7 @@
                   src="./images/catalog/hotel-villas.jpg"
                   width="300"
                   height="212"
-                  alt=""
+                  alt="Деревня на фоне дождя и радуги."
                 />
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
                 <div class="product-card-actions">
@@ -376,7 +386,7 @@
                     В избранном
                   </button>
                   <span class="stars four-stars">
-                    <span class="visually-hidden">4 звезды</span>
+                    <span class="visually-hidden">4 звезды.</span>
                   </span>
                   <button
                     class="button button-disabled rating"
@@ -395,7 +405,7 @@
                   src="./images/catalog/hotel-desert.jpg"
                   width="300"
                   height="212"
-                  alt=""
+                  alt="Скалы в ясную погоду."
                 />
                 <h3 class="product-card-title">Desert Quail Inn</h3>
                 <div class="product-card-actions">
@@ -408,7 +418,7 @@
                     В избранное
                   </button>
                   <span class="stars three-stars">
-                    <span class="visually-hidden">3 звезды</span>
+                    <span class="visually-hidden">3 звезды.</span>
                   </span>
                   <button
                     class="button button-disabled rating"
@@ -427,7 +437,7 @@
                   src="./images/catalog/hotel-greentree.jpg"
                   width="300"
                   height="212"
-                  alt=""
+                  alt="Каньон под звездным небом."
                 />
                 <h3 class="product-card-title">GreenTree Inn</h3>
                 <div class="product-card-actions">
@@ -440,7 +450,7 @@
                     В избранное
                   </button>
                   <span class="stars two-stars">
-                    <span class="visually-hidden">2 звезды</span>
+                    <span class="visually-hidden">2 звезды.</span>
                   </span>
                   <button
                     class="button button-disabled rating"
@@ -479,50 +489,45 @@
         </section>
         <!--Блок подписки-->
         <section class="subscribe page-subscribe">
-          <div class="subscribe-container">
-            <div class="subscribe-title-container">
-              <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-              <p class="subscribe-description">
-                Только полезная информация и никакого спама,<br />
-                честное бойскаутское!
-              </p>
-            </div>
-            <div class="mail-subscribe">
-              <form
-                id="mail-subscribe-form"
-                class="subscribe-form"
-                action="https://echo.htmlacademy.ru/"
-                method="post"
-              >
-                <p class="subscribe-form-email">
-                  <label for="form-email"></label>
-                  <input
-                    class="email-field email-field-catalog"
-                    type="email"
-                    id="form-email"
-                    name="email"
-                    placeholder="Ваш e-mail"
-                  />
-                </p>
-              </form>
-              <button
-                class="button subscribe-button"
-                type="submit"
-                form="mail-subscribe-form"
-              >
-                Подписаться
-              </button>
-            </div>
-          </div>
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-description">
+            Только полезная информация и никакого спама,<br />
+            честное бойскаутское!
+          </p>
+          <form
+            id="mail-subscribe-form"
+            class="subscribe-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <p class="subscribe-form-email">
+              <label for="form-email"></label>
+              <input
+                class="email-field email-field-catalog"
+                type="email"
+                id="form-email"
+                name="email"
+                placeholder="Ваш e-mail"
+                required
+              />
+            </p>
+            <button
+              class="button subscribe-button"
+              type="submit"
+              form="mail-subscribe-form"
+            >
+              Подписаться
+            </button>
+          </form>
         </section>
       </div>
     </main>
-    <!--ФУТЕР-->
+    <!--Футер-->
     <footer class="main-footer">
       <section class="footer-contacts">
         <div class="footer-container">
-          <h2 class="visually-hidden">Контакты</h2>
-          <h3 class="visually-hidden footer-social">Социальные сети</h3>
+          <h2 class="visually-hidden">Контакты.</h2>
+          <h3 class="visually-hidden footer-social">Социальные сети.</h3>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="social-button" href="https://vk.com/htmlacademy">
@@ -534,6 +539,8 @@
                   viewBox="0 0 24 14"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Вконтакте."
                 >
                   <path
                     fill-rule="evenodd"
@@ -549,7 +556,7 @@
                     fill="#83B3D3"
                   />
                 </svg>
-                <span class="visually-hidden">Вконтакте</span>
+                <span class="visually-hidden">Вконтакте.</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -562,6 +569,8 @@
                   viewBox="0 0 18 16"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Телеграмм."
                 >
                   <path
                     d="M16.785.9557.8405 7.1042c-1.0882.437-1.0819 1.044-.1997 1.3148l4.0937 1.277L14.2057
@@ -570,7 +579,7 @@
                     fill="#83B3D3"
                   />
                 </svg>
-                <span class="visually-hidden">Телеграмм</span>
+                <span class="visually-hidden">Телеграмм.</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -586,6 +595,8 @@
                   viewBox="0 0 22 17"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="youtube."
                 >
                   <path
                     d="M18.9402.3564H3.5074c-1.8607 0-3.1741 1.5938-3.1741 3.4v10.0938c0 1.9125 1.3134 3.5062 3.174
@@ -594,13 +605,13 @@
                     fill="#83B3D3"
                   />
                 </svg>
-                <span class="visually-hidden">youtube</span>
+                <span class="visually-hidden">youtube.</span>
               </a>
             </li>
           </ul>
-          <h3 class="visually-hidden">Номер телефона</h3>
+          <h3 class="visually-hidden">Номер телефона.</h3>
           <a class="tel-number" href="tel:+78005558628">+7 (812) 812-12-12</a>
-          <h3 class="visually-hidden">Разработчик сайта</h3>
+          <h3 class="visually-hidden">Разработчик сайта.</h3>
           <a
             class="social-button-text site-developer"
             href="https://htmlacademy.ru/"
@@ -613,6 +624,8 @@
               viewBox="0 0 115 34"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="HTML Academy."
             >
               <path
                 d="M0 13.256v2.6h2.5v-2.6H0ZM11.6 4.856c-1.6 0-2.8.7-3.6 1.7h-.1v-6.2h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0
@@ -634,7 +647,7 @@
                 fill="#000"
               />
             </svg>
-            <span class="visually-hidden">HTML Academy</span>
+            <span class="visually-hidden">HTML Academy.</span>
           </a>
         </div>
       </section>
