@@ -651,7 +651,6 @@ li:nth-child(3) .social-button {
 .search-form .field-group {
   margin: 0;
   display: flex;
-  position: relative;
 }
 .date-field {
   margin: 0;
@@ -665,6 +664,9 @@ li:nth-child(3) .social-button {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 .date-field:hover {
   background-color: #e6e6e6;
